@@ -1,0 +1,196 @@
+/***************************
+Basic Styles
+***************************/
+* {
+  font-family: 'Droid Serif', serif;
+  box-sizing: border-box;
+}
+.nonform-text {
+  text-align: center;
+}
+
+header h1 {
+  background: #2d3945;
+  color: #fff;
+}
+
+header h2,
+.form-heading {
+  color: #2d3945;
+}
+
+header h3,
+footer {
+  color: #9da3a8;
+}
+
+header h3{
+  padding-bottom: 10px;
+  border-bottom: 4px solid #2d3945;
+  margin-bottom: 3px;
+}
+
+legend {
+font-size: 1.25em;
+font-weight: 700;
+padding: 30px 0 10px 10px;
+margin-top: 0;
+border-top: 1px solid #002600;
+width: 100%;
+float: left;
+}
+
+/***************************
+Form Styles
+***************************/
+
+fieldset {
+  color: #495d70;
+  border: none;
+
+  margin: 0;
+}
+
+select,
+.user_input_fields {
+  background-color: #eff0f1;
+  border-style: none;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.15em;
+}
+
+select {
+  color: #a8adb2;
+}
+
+optgroup {
+  background-color: #eff0f1
+}
+
+.form-fields {;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 130px;
+}
+
+.title {
+text-decoration: none;
+  padding: 20px 0;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border: solid 1px #46698b;
+  transition: 2s;
+}
+::-webkit-input-placeholder {
+text-align: right;
+}
+
+
+/***************************
+Newsletter Styles
+***************************/
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+padding: 5px;
+display: inline-block;
+margin: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+margin-left: 10px;
+}
+
+p {
+margin: 5px;
+padding: 5px;
+}
+
+.newsletter {
+margin: 10px 0 -10px 10px;
+padding: 0;
+}
+
+textarea {
+width: 100%;
+margin-bottom: 15px;
+height: 100px;
+border-radius: 10px;
+}
+
+
+
+/***************************
+Button Styles
+***************************/
+
+.btn {
+  text-align: center;
+}
+
+#submit-btn {
+  border-style: none;
+  background: #4ebbb5;
+  font-size: 1.25em;
+  width: 85%;
+  border-radius: 3%;
+  padding: 15px 0;
+  color: #fff;
+}
+
+/***************************
+Media Queries
+***************************/
+
+@media (min-width: 760px) {
+  select,
+  .user_input_fields {
+    display: inline-block;
+    max-width: 750px;
+    float: right;
+    margin: 10px 0;
+    width: calc(70% - 30px);
+  }
+
+  .form-fields {
+    float: left;
+    display: inline-block;
+    clear: both;
+    margin-top: 25px;
+    width: calc(30% - 30px);
+  }
+
+  fieldset {
+  padding: 0 200px;
+  margin: 0;
+  }
+
+  header {
+    padding: 0 100px;
+  }
+
+  label {
+    font-size: 1.25em;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  fieldset {
+  padding: 0 200px;
+  margin: 0 100px;
+  }
+
+  #submit-btn {
+    width: 50%;
+  }
+}
